@@ -1,0 +1,154 @@
+@media screen and (max-width: 1200px) {
+  .years-section {
+    .years-content {
+      grid-template-areas:
+        " left left left"
+        "right bottom bottom";
+      padding: 0 2rem;
+    }
+  }
+}
+@media screen and (max-width: 1130px) {
+  .years-section {
+    .years-content {
+      grid-template-areas:
+        " left left left left"
+        "right right bottom bottom";
+
+      grid-gap: 6rem;
+      align-items: center;
+
+      .left {
+        max-width: 90%;
+
+        .big10 {
+          font-size: 30rem;
+        }
+      }
+    }
+  }
+
+  .service-section {
+    .service-content {
+      display: flex;
+      flex-direction: column;
+      padding: 2rem;
+
+      .service-left {
+        img {
+          width: 30%;
+          height: 50%;
+        }
+      }
+    }
+  }
+
+  .team-section {
+    .get-more {
+      display: flex;
+
+      align-items: center;
+      padding: 3rem 0;
+
+      .get-more-left {
+        width: 60%;
+      }
+      .get-more-right {
+        width: 40%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1030px) {
+  .team-section {
+    .pricing-section {
+      .price-boxes {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+  .news-section {
+    .address-section {
+      .address-content {
+        flex-wrap: wrap;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .team-section {
+    .team-img {
+      padding: 0 1.5rem;
+      transition: 400ms all;
+      display: grid;
+      grid-gap: 3rem;
+      grid-template-columns: repeat(2, 1fr);
+
+      img {
+        width: 60%;
+        margin: auto;
+      }
+    }
+    .get-more {
+      display: flex;
+      flex-direction: column-reverse;
+
+      align-items: center;
+      padding: 3rem 0;
+
+      .get-more-left {
+        width: 90%;
+      }
+      .get-more-right {
+        width: 60%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .years-section {
+    .years-content {
+      grid-template-areas:
+        " left left left "
+        "right right right"
+        "bottom bottom bottom";
+
+      .year-bottom {
+        .img-box {
+          margin: 0.8rem;
+        }
+      }
+    }
+  }
+
+  .team-section {
+    .pricing-section {
+      .price-boxes {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        .price-box {
+          flex-basis: 45%;
+        }
+      }
+    }
+  }
+  .review-place {
+    .reviews {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .review-box {
+        width: 40%;
+        margin: 1rem;
+        padding: 2rem;
+        height: fit-content;
+      }
+    }
+  }
+}
